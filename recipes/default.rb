@@ -9,7 +9,6 @@ apt_repository 'influxdata' do
   distribution 'trusty'
   components ['stable']
   key 'https://repos.influxdata.com/influxdb.key'
-  action :add
   only_if { platform_family?('debian') }
 end
 

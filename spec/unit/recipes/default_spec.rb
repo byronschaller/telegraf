@@ -16,5 +16,21 @@ describe 'telegraf::default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
+
+    # it 'adds the influxdata apt repo' do
+    #   expect(chef_run).to add_apt_repository('influxdata')
+    # end
+
+    it 'installs the telegraf package' do
+      expect(chef_run).to install_package('telegraf')
+    end
+
+    it 'starts the telegraf service' do
+      expect(chef_run).to start_service('telegraf')
+    end
+
+    it 'enables the telegraf service' do
+      expect(chef_run).to enable_service('telegraf')
+    end
   end
 end
