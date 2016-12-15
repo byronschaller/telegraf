@@ -12,6 +12,13 @@ if os.debian?
   end
 end
 
+if os.redhat?
+  describe yum.repo('influxdata') do
+    it { should exist }
+    it { should be_enabled }
+  end
+end
+
 describe package('telegraf') do
   it { should be_installed }
 end
