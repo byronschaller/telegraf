@@ -1,7 +1,0 @@
-DEPENDENCIES
-  telegraf
-    path: .
-    metadata: true
-
-GRAPH
-  telegraf (0.1.0)
