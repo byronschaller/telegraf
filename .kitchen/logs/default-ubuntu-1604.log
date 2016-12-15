@@ -1,5 +1,196 @@
-I, [2016-12-14T01:06:28.088777 #11879]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
-I, [2016-12-14T01:06:30.817972 #11879]  INFO -- default-ubuntu-1604: ==> default: Forcing shutdown of VM...
-I, [2016-12-14T01:06:32.430316 #11879]  INFO -- default-ubuntu-1604: ==> default: Destroying VM and associated drives...
-I, [2016-12-14T01:06:32.705552 #11879]  INFO -- default-ubuntu-1604: Vagrant instance <default-ubuntu-1604> destroyed.
-I, [2016-12-14T01:06:32.706475 #11879]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m4.62s).
+I, [2016-12-14T23:24:49.518785 #13578]  INFO -- default-ubuntu-1604: -----> Cleaning up any prior instances of <default-ubuntu-1604>
+I, [2016-12-14T23:24:49.518896 #13578]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
+I, [2016-12-14T23:24:49.520142 #13578]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m0.00s).
+I, [2016-12-14T23:24:49.520389 #13578]  INFO -- default-ubuntu-1604: -----> Testing <default-ubuntu-1604>
+I, [2016-12-14T23:24:49.520510 #13578]  INFO -- default-ubuntu-1604: -----> Creating <default-ubuntu-1604>...
+I, [2016-12-14T23:24:51.426754 #13578]  INFO -- default-ubuntu-1604: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-12-14T23:24:51.579092 #13578]  INFO -- default-ubuntu-1604: ==> default: Importing base box 'bento/ubuntu-16.04'...
+I, [2016-12-14T23:25:01.250984 #13578]  INFO -- default-ubuntu-1604: [KProgress: 10%[KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 50%[KProgress: 60%[KProgress: 70%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2016-12-14T23:25:01.406729 #13578]  INFO -- default-ubuntu-1604: ==> default: Checking if box 'bento/ubuntu-16.04' is up to date...
+I, [2016-12-14T23:25:02.561183 #13578]  INFO -- default-ubuntu-1604: ==> default: Setting the name of the VM: kitchen-telegraf-default-ubuntu-1604_default_1481775902520_72511
+I, [2016-12-14T23:25:03.311842 #13578]  INFO -- default-ubuntu-1604: ==> default: Clearing any previously set network interfaces...
+I, [2016-12-14T23:25:03.358038 #13578]  INFO -- default-ubuntu-1604: ==> default: Preparing network interfaces based on configuration...
+I, [2016-12-14T23:25:03.358600 #13578]  INFO -- default-ubuntu-1604:     default: Adapter 1: nat
+I, [2016-12-14T23:25:03.415557 #13578]  INFO -- default-ubuntu-1604: ==> default: Forwarding ports...
+I, [2016-12-14T23:25:03.502927 #13578]  INFO -- default-ubuntu-1604:     default: 22 (guest) => 2222 (host) (adapter 1)
+I, [2016-12-14T23:25:03.650491 #13578]  INFO -- default-ubuntu-1604: ==> default: Booting VM...
+I, [2016-12-14T23:25:03.877300 #13578]  INFO -- default-ubuntu-1604: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2016-12-14T23:25:04.239844 #13578]  INFO -- default-ubuntu-1604:     default: SSH address: 127.0.0.1:2222
+I, [2016-12-14T23:25:04.240037 #13578]  INFO -- default-ubuntu-1604:     default: SSH username: vagrant
+I, [2016-12-14T23:25:04.240301 #13578]  INFO -- default-ubuntu-1604:     default: SSH auth method: private key
+I, [2016-12-14T23:25:20.203394 #13578]  INFO -- default-ubuntu-1604:     default: 
+I, [2016-12-14T23:25:20.203448 #13578]  INFO -- default-ubuntu-1604:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2016-12-14T23:25:20.203467 #13578]  INFO -- default-ubuntu-1604:     default: this with a newly generated keypair for better security.
+I, [2016-12-14T23:25:20.892694 #13578]  INFO -- default-ubuntu-1604:     default: 
+I, [2016-12-14T23:25:20.892762 #13578]  INFO -- default-ubuntu-1604:     default: Inserting generated public key within guest...
+I, [2016-12-14T23:25:20.996100 #13578]  INFO -- default-ubuntu-1604:     default: Removing insecure key from the guest if it's present...
+I, [2016-12-14T23:25:21.100081 #13578]  INFO -- default-ubuntu-1604:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2016-12-14T23:25:21.948783 #13578]  INFO -- default-ubuntu-1604: ==> default: Machine booted and ready!
+I, [2016-12-14T23:25:21.949375 #13578]  INFO -- default-ubuntu-1604: ==> default: Checking for guest additions in VM...
+I, [2016-12-14T23:25:22.006222 #13578]  INFO -- default-ubuntu-1604: ==> default: Setting hostname...
+I, [2016-12-14T23:25:22.296974 #13578]  INFO -- default-ubuntu-1604: ==> default: Mounting shared folders...
+I, [2016-12-14T23:25:22.297646 #13578]  INFO -- default-ubuntu-1604:     default: /tmp/omnibus/cache => /Users/byronschaller/.kitchen/cache
+I, [2016-12-14T23:25:22.812619 #13578]  INFO -- default-ubuntu-1604: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2016-12-14T23:25:25.384683 #13578]  INFO -- default-ubuntu-1604: [SSH] Established
+I, [2016-12-14T23:25:25.385686 #13578]  INFO -- default-ubuntu-1604: Vagrant instance <default-ubuntu-1604> created.
+I, [2016-12-14T23:25:25.387869 #13578]  INFO -- default-ubuntu-1604: Finished creating <default-ubuntu-1604> (0m35.86s).
+I, [2016-12-14T23:25:25.388450 #13578]  INFO -- default-ubuntu-1604: -----> Converging <default-ubuntu-1604>...
+I, [2016-12-14T23:25:25.390865 #13578]  INFO -- default-ubuntu-1604: Preparing files for transfer
+I, [2016-12-14T23:25:25.391336 #13578]  INFO -- default-ubuntu-1604: Preparing dna.json
+I, [2016-12-14T23:25:25.392660 #13578]  INFO -- default-ubuntu-1604: Resolving cookbook dependencies with Berkshelf 5.2.0...
+I, [2016-12-14T23:25:30.991843 #13578]  INFO -- default-ubuntu-1604: Removing non-cookbook files before transfer
+I, [2016-12-14T23:25:30.996454 #13578]  INFO -- default-ubuntu-1604: Preparing validation.pem
+I, [2016-12-14T23:25:30.997131 #13578]  INFO -- default-ubuntu-1604: Preparing client.rb
+I, [2016-12-14T23:25:31.024214 #13578]  INFO -- default-ubuntu-1604: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-12-14T23:25:31.026911 #13578]  INFO -- default-ubuntu-1604: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2016-12-14T23:25:31.027216 #13578]  INFO -- default-ubuntu-1604: Trying wget...
+I, [2016-12-14T23:25:31.506833 #13578]  INFO -- default-ubuntu-1604: Download complete.
+I, [2016-12-14T23:25:31.518693 #13578]  INFO -- default-ubuntu-1604: ubuntu 16.04 x86_64
+I, [2016-12-14T23:25:31.518745 #13578]  INFO -- default-ubuntu-1604: Getting information for chef stable  for ubuntu...
+I, [2016-12-14T23:25:31.518765 #13578]  INFO -- default-ubuntu-1604: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=16.04&m=x86_64
+I, [2016-12-14T23:25:31.519031 #13578]  INFO -- default-ubuntu-1604:   to file /tmp/install.sh.1531/metadata.txt
+I, [2016-12-14T23:25:31.519742 #13578]  INFO -- default-ubuntu-1604: trying wget...
+I, [2016-12-14T23:25:31.729007 #13578]  INFO -- default-ubuntu-1604: sha1	10b9026d57005aaf31289aec650931a02b5347d3
+I, [2016-12-14T23:25:31.729744 #13578]  INFO -- default-ubuntu-1604: sha256	de5991b073fb22aa295fd0142f5e4ed3ca7da6ffe2c3fdcb01da29e4cdd0bd04
+I, [2016-12-14T23:25:31.730431 #13578]  INFO -- default-ubuntu-1604: url	https://packages.chef.io/files/stable/chef/12.17.44/ubuntu/16.04/chef_12.17.44-1_amd64.deb
+I, [2016-12-14T23:25:31.730923 #13578]  INFO -- default-ubuntu-1604: version	12.17.44
+I, [2016-12-14T23:25:31.733010 #13578]  INFO -- default-ubuntu-1604: downloaded metadata file looks valid...
+I, [2016-12-14T23:25:31.739369 #13578]  INFO -- default-ubuntu-1604: /tmp/omnibus/cache/chef_12.17.44-1_amd64.deb already exists, verifiying checksum...
+I, [2016-12-14T23:25:31.739626 #13578]  INFO -- default-ubuntu-1604: Comparing checksum with sha256sum...
+I, [2016-12-14T23:25:32.091744 #13578]  INFO -- default-ubuntu-1604: checksum compare succeeded, using existing file!
+I, [2016-12-14T23:25:32.092002 #13578]  INFO -- default-ubuntu-1604: 
+I, [2016-12-14T23:25:32.092042 #13578]  INFO -- default-ubuntu-1604: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-12-14T23:25:32.092060 #13578]  INFO -- default-ubuntu-1604: 
+I, [2016-12-14T23:25:32.092475 #13578]  INFO -- default-ubuntu-1604: You are installing an omnibus package without a version pin.  If you are installing
+I, [2016-12-14T23:25:32.092516 #13578]  INFO -- default-ubuntu-1604: on production servers via an automated process this is DANGEROUS and you will
+I, [2016-12-14T23:25:32.092534 #13578]  INFO -- default-ubuntu-1604: be upgraded without warning on new releases, even to new major releases.
+I, [2016-12-14T23:25:32.092550 #13578]  INFO -- default-ubuntu-1604: Letting the version float is only appropriate in desktop, test, development or
+I, [2016-12-14T23:25:32.092573 #13578]  INFO -- default-ubuntu-1604: CI/CD environments.
+I, [2016-12-14T23:25:32.092586 #13578]  INFO -- default-ubuntu-1604: 
+I, [2016-12-14T23:25:32.092616 #13578]  INFO -- default-ubuntu-1604: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-12-14T23:25:32.092630 #13578]  INFO -- default-ubuntu-1604: 
+I, [2016-12-14T23:25:32.092644 #13578]  INFO -- default-ubuntu-1604: Installing chef 
+I, [2016-12-14T23:25:32.092657 #13578]  INFO -- default-ubuntu-1604: installing with dpkg...
+I, [2016-12-14T23:25:32.150748 #13578]  INFO -- default-ubuntu-1604: Selecting previously unselected package chef.
+I, [2016-12-14T23:25:32.307609 #13578]  INFO -- default-ubuntu-1604: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 37814 files and directories currently installed.)
+I, [2016-12-14T23:25:32.309799 #13578]  INFO -- default-ubuntu-1604: Preparing to unpack .../chef_12.17.44-1_amd64.deb ...
+I, [2016-12-14T23:25:32.314569 #13578]  INFO -- default-ubuntu-1604: Unpacking chef (12.17.44-1) ...
+I, [2016-12-14T23:25:38.655233 #13578]  INFO -- default-ubuntu-1604: Setting up chef (12.17.44-1) ...
+I, [2016-12-14T23:25:38.705245 #13578]  INFO -- default-ubuntu-1604: Thank you for installing Chef!
+I, [2016-12-14T23:25:38.742102 #13578]  INFO -- default-ubuntu-1604: Transferring files to <default-ubuntu-1604>
+I, [2016-12-14T23:25:39.914730 #13578]  INFO -- default-ubuntu-1604: Starting Chef Client, version 12.17.44
+I, [2016-12-14T23:25:41.632411 #13578]  INFO -- default-ubuntu-1604: Creating a new client identity for default-ubuntu-1604 using the validator key.
+I, [2016-12-14T23:25:41.767568 #13578]  INFO -- default-ubuntu-1604: resolving cookbooks for run list: ["telegraf::default"]
+I, [2016-12-14T23:25:41.780801 #13578]  INFO -- default-ubuntu-1604: Synchronizing Cookbooks:
+I, [2016-12-14T23:25:41.786619 #13578]  INFO -- default-ubuntu-1604:   - telegraf (0.1.0)
+I, [2016-12-14T23:25:41.787438 #13578]  INFO -- default-ubuntu-1604: Installing Cookbook Gems:
+I, [2016-12-14T23:25:41.788302 #13578]  INFO -- default-ubuntu-1604: Compiling Cookbooks...
+I, [2016-12-14T23:25:41.792004 #13578]  INFO -- default-ubuntu-1604: Converging 3 resources
+I, [2016-12-14T23:25:41.792865 #13578]  INFO -- default-ubuntu-1604: Recipe: telegraf::default
+I, [2016-12-14T23:25:41.869596 #13578]  INFO -- default-ubuntu-1604:   * apt_repository[influxdata] action add
+I, [2016-12-14T23:25:42.532181 #13578]  INFO -- default-ubuntu-1604:     * remote_file[/tmp/kitchen/cache/https___repos_influxdata_com_influxdb_key] action create
+I, [2016-12-14T23:25:42.534723 #13578]  INFO -- default-ubuntu-1604:       - create new file /tmp/kitchen/cache/https___repos_influxdata_com_influxdb_key
+I, [2016-12-14T23:25:42.535283 #13578]  INFO -- default-ubuntu-1604:       - update content in file /tmp/kitchen/cache/https___repos_influxdata_com_influxdb_key from none to 23a1c8
+I, [2016-12-14T23:25:42.536054 #13578]  INFO -- default-ubuntu-1604:       --- /tmp/kitchen/cache/https___repos_influxdata_com_influxdb_key	2016-12-15 04:25:40.896903787 +0000
+I, [2016-12-14T23:25:42.536754 #13578]  INFO -- default-ubuntu-1604:       +++ /tmp/chef-rest20161215-1616-h306ez	2016-12-15 04:25:40.892901787 +0000
+I, [2016-12-14T23:25:42.537240 #13578]  INFO -- default-ubuntu-1604:       @@ -1 +1,53 @@
+I, [2016-12-14T23:25:42.537731 #13578]  INFO -- default-ubuntu-1604:       +-----BEGIN PGP PUBLIC KEY BLOCK-----
+I, [2016-12-14T23:25:42.538256 #13578]  INFO -- default-ubuntu-1604:       +Version: GnuPG v1
+I, [2016-12-14T23:25:42.538737 #13578]  INFO -- default-ubuntu-1604:       +
+I, [2016-12-14T23:25:42.539407 #13578]  INFO -- default-ubuntu-1604:       +mQINBFYJmwQBEADCw7mob8Vzk+DmkYyiv0dTU/xgoSlp4SQwrTzat8MB8jxmx60l
+I, [2016-12-14T23:25:42.539932 #13578]  INFO -- default-ubuntu-1604:       +QjmhqEyuB8ho4zzZF9KV+gJWrG6Rj4t69JMTJWM7jFz+0B1PC7kJfNM+VcBmkTnj
+I, [2016-12-14T23:25:42.540477 #13578]  INFO -- default-ubuntu-1604:       +fP+KJjqz50ETnsF0kQTG++UJeRYjG1dDK0JQNQJAM6NQpIWJI339lcDf15vzrMnb
+I, [2016-12-14T23:25:42.540973 #13578]  INFO -- default-ubuntu-1604:       +OgIlNxV6j1ZZqkle4fvScF1NQxYScRiL+sRgVx92SI4SyD/xZnVGD/szB+4OCzah
+I, [2016-12-14T23:25:42.541471 #13578]  INFO -- default-ubuntu-1604:       ++0Q/MnNGV6TtN0RiCDZjIUYiHoeT9iQXEONKf7T62T4zUafO734HyqGvht93MLVU
+I, [2016-12-14T23:25:42.541796 #13578]  INFO -- default-ubuntu-1604:       +GQAeuyx0ikGsULfOsJfBmb3XJS9u+16v7oPFt5WIbeyyNuhUu0ocK/PKt5sPYR4u
+I, [2016-12-14T23:25:42.542056 #13578]  INFO -- default-ubuntu-1604:       +ouPq6Ls3RY3BGCH9DpokcYsdalo51NMrMdnYwdkeq9MEpsEKrKIN5ke7fk4weamJ
+I, [2016-12-14T23:25:42.542453 #13578]  INFO -- default-ubuntu-1604:       +BiLI/bTcfM7Fy5r4ghdI9Ksw/ULXLm4GNabkIOSfT7UjTzcBDOvWfKRBLX4qvsx4
+I, [2016-12-14T23:25:42.542936 #13578]  INFO -- default-ubuntu-1604:       +YzA5kR+nX85u6I7W10aSqBiaLqk6vCj0QmBmCjlSeYqNQqSzH/6OoL6FZ7lP6AiG
+I, [2016-12-14T23:25:42.542992 #13578]  INFO -- default-ubuntu-1604:       +F2NyGveJKjugoXlreLEhOYp20F81PNwlRBCAlMC2Q9mpcFu0dtAriVoG4gVDdYn5
+I, [2016-12-14T23:25:42.543013 #13578]  INFO -- default-ubuntu-1604:       +t+BiGfD2rJlCinYLgYBDpTPcdRT3VKHWqL9fcC4HKmic0mwWg9homx550wARAQAB
+I, [2016-12-14T23:25:42.543029 #13578]  INFO -- default-ubuntu-1604:       +tDFJbmZsdXhEQiBQYWNrYWdpbmcgU2VydmljZSA8c3VwcG9ydEBpbmZsdXhkYi5j
+I, [2016-12-14T23:25:42.543050 #13578]  INFO -- default-ubuntu-1604:       +b20+iQI3BBMBCgAhBQJWCZsEAhsDBQsJCAcDBRUKCQgLBRYDAgEAAh4BAheAAAoJ
+I, [2016-12-14T23:25:42.543063 #13578]  INFO -- default-ubuntu-1604:       +EGhKFM8lguDF9XEQAK9rREnZt6ujh7GXfeNki35bkn39q8GYh0mouShFbFY9o0i3
+I, [2016-12-14T23:25:42.543469 #13578]  INFO -- default-ubuntu-1604:       +UJVChsxokJSRPgFh9GOhOPTupl3rzfdpD+IlWI2Myt6han2HOjZKNZ4RGNrYJ5UR
+I, [2016-12-14T23:25:42.543968 #13578]  INFO -- default-ubuntu-1604:       +uxt4dKMWlMbpkzL56bhHlx97RoXKv2d2zRQfw9nyZb6t3lw2k2kKXsMxjGa0agM+
+I, [2016-12-14T23:25:42.544425 #13578]  INFO -- default-ubuntu-1604:       +2SropwYOXdtkz8UWaGd3LYxwEvW3AuhI8EEEHdLetQaYe9sANDvUEofgFbdsuICH
+I, [2016-12-14T23:25:42.544934 #13578]  INFO -- default-ubuntu-1604:       +9QLmbYavk7wyGTPBKfPBbeyTxwW2rMUnFCNccMKLm1i5NpZYineBtQbX2cfx9Xsk
+I, [2016-12-14T23:25:42.545184 #13578]  INFO -- default-ubuntu-1604:       +1JLOzEBmNal53H2ob0kjev6ufzOD3s8hLu4KMCivbIz4YT3fZyeExn0/0lUtsQ56
+I, [2016-12-14T23:25:42.545230 #13578]  INFO -- default-ubuntu-1604:       +5fCxE983+ygDzKsCnfdXqm3GgjaI90OkNr1y4gWbcd5hicVDv5fD3TD9f0GbpDVw
+I, [2016-12-14T23:25:42.545447 #13578]  INFO -- default-ubuntu-1604:       +yDz8YmvNzxMILt5Glisr6aH7gLG/u8jxy0D8YcBiyv5kfY4vMI2yXHpGg1cn/sVu
+I, [2016-12-14T23:25:42.545616 #13578]  INFO -- default-ubuntu-1604:       +ZB01sU09VVIM2BznnimyAayI430wquxkZCyMx//BqFM1qetIgk1wDZTlFd0n6qtA
+I, [2016-12-14T23:25:42.548734 #13578]  INFO -- default-ubuntu-1604:       +fDmXAC4s5pM5rfM5V57WmPaIqnRIaESJ35tFUFlCHfkfl/N/ribGVDg1z2KDW08r
+I, [2016-12-14T23:25:42.548802 #13578]  INFO -- default-ubuntu-1604:       +96oEiIIiV4GfXl+NprJqpNS3Cn+aCXtd7/TsDScDEgs4sMaR29Lsf26cuWk8uQIN
+I, [2016-12-14T23:25:42.548830 #13578]  INFO -- default-ubuntu-1604:       +BFYJmwQBEADDPi3fmwn6iwkiDcH2E2V31cHlBw9OdJfxKVUdyAQEhTtqmG9P8XFZ
+I, [2016-12-14T23:25:42.549962 #13578]  INFO -- default-ubuntu-1604:       +ERRQF155XLQPLvRlUlq7vEYSROn5J6BAnsjdjsH9LmFMOEV8CIRCRIDePG/Mez2d
+I, [2016-12-14T23:25:42.550531 #13578]  INFO -- default-ubuntu-1604:       +nIK5yiU6GkS3IFaQg2T9/tOBKxm0ZJPfqTXbT4jFSfvYJ3oUqc+AyYxtb8gj1GRk
+I, [2016-12-14T23:25:42.552382 #13578]  INFO -- default-ubuntu-1604:       +X283/86/bA3C98u7re1vPtiDRyM8r0+lhEc59Yx/EAOL+X2gZyTgyUoH+LLuOWQK
+I, [2016-12-14T23:25:42.553036 #13578]  INFO -- default-ubuntu-1604:       +s1egI8y80R8NZfM1nMiQk2ywMsTFwQjSVimScvzqv5Nt8k8CvHUQ3a6R+6doXGNX
+I, [2016-12-14T23:25:42.553840 #13578]  INFO -- default-ubuntu-1604:       +5RnUqn9Qvmh0JY5sNgFsoaGbuk2PJrVaGBRnfnjaDqAlZpDhwkWhcCcguNhRbRHp
+I, [2016-12-14T23:25:42.554977 #13578]  INFO -- default-ubuntu-1604:       +N7/a0pQr70bAG9VikzLyGC17EU0sxney/hyNHkr4Uyy2OXHpuJvRjVKy/BwZ3fxA
+I, [2016-12-14T23:25:42.555781 #13578]  INFO -- default-ubuntu-1604:       +AYX2oZIOxQB3/OulzO/DppaCVhRtp1bt+Z5f+fpisiVb5DvZcMdeyAoQ4+oOr7v3
+I, [2016-12-14T23:25:42.556613 #13578]  INFO -- default-ubuntu-1604:       +EasIs2XYcQ+kOE3Y2kdlHWBeuXzxgWgJZ1OOpwGMjR3Uy6IwhuSWtreJBA4er+Df
+I, [2016-12-14T23:25:42.557225 #13578]  INFO -- default-ubuntu-1604:       +vgSPwKBsRLNLbPe3ftjArnC5GfMiGgikVdAUdN4OkEqvUbkRoAVGKTOMLUKm+ZkG
+I, [2016-12-14T23:25:42.557685 #13578]  INFO -- default-ubuntu-1604:       +OskJOVYS+JAina0qkYEFF7haycMjf9olhqLmTIC+6X7Ox9R2plaOhQARAQABiQIf
+I, [2016-12-14T23:25:42.558081 #13578]  INFO -- default-ubuntu-1604:       +BBgBCgAJBQJWCZsEAhsMAAoJEGhKFM8lguDF8ZIP/1q9Sdz8oMvf9AJXZ7AYxm77
+I, [2016-12-14T23:25:42.558481 #13578]  INFO -- default-ubuntu-1604:       +V+kJzJqi62nZLWJnrFXDZJpU+LkYlb3fstsZ1rvBhnrEPSmFxoj72CP0RtcyX7wJ
+I, [2016-12-14T23:25:42.558872 #13578]  INFO -- default-ubuntu-1604:       +dA7K1Fl9LpJi5H8300cC7UyG94MUYbrXijbLTbnFTfNr1tGx4a1T/7Yyxx/wZGrT
+I, [2016-12-14T23:25:42.559250 #13578]  INFO -- default-ubuntu-1604:       +H/X8cvNybkl33SxDdlQQ9kx3lFOwC41e3TkGsUWxn3TCfvDh8VdA6Py6JeSPFGOb
+I, [2016-12-14T23:25:42.559726 #13578]  INFO -- default-ubuntu-1604:       +MEO2/q7oUgvjfV+ivN5ayZi9bWgeqm1sgtmTHHQ4RqwwKrAb5ynXpn1b9QrkevgT
+I, [2016-12-14T23:25:42.560131 #13578]  INFO -- default-ubuntu-1604:       +b91uzMA22Prl4DuzKiaMYDcZOQ3vtf0eFBP0GOSSgUKS4bQ3dGgi1JmQ7VuAM4uj
+I, [2016-12-14T23:25:42.560403 #13578]  INFO -- default-ubuntu-1604:       ++Ug5TnGoLwclTwLksc7v89C5MMPgm2vVXvCUDzyzQA7bIHFeX+Rziby4nymec4Nr
+I, [2016-12-14T23:25:42.560644 #13578]  INFO -- default-ubuntu-1604:       +eeXYNBJWrEp8XR7UNWmEgroXRoN1x9/6esh5pnoUXGAIWuKzSLQM70/wWxS67+v2
+I, [2016-12-14T23:25:42.560878 #13578]  INFO -- default-ubuntu-1604:       +aC1GNb+pXXAzYeIIiyLWaZwCSr8sWMvshFT9REk2+lnb6sAeJswQtfTUWI00mVqZ
+I, [2016-12-14T23:25:42.561115 #13578]  INFO -- default-ubuntu-1604:       +dvI3Wys2h0IyIejuwetTUvGhr9VgpqiLLfGzGlt/y2sg27wdHzSJbMh0VrVAK26/
+I, [2016-12-14T23:25:42.566467 #13578]  INFO -- default-ubuntu-1604:       +BlvEwWDCFT0ZJUMG9Lvre25DD0ycbougLsRYjzmGb/3k3UktS3XTCxyBa/k3TPw3
+I, [2016-12-14T23:25:42.566913 #13578]  INFO -- default-ubuntu-1604:       +vqIHrEqk446nGPDqJPS5
+I, [2016-12-14T23:25:42.567226 #13578]  INFO -- default-ubuntu-1604:       +=9iF7
+I, [2016-12-14T23:25:42.567530 #13578]  INFO -- default-ubuntu-1604:       +-----END PGP PUBLIC KEY BLOCK-----
+I, [2016-12-14T23:25:42.567817 #13578]  INFO -- default-ubuntu-1604:       - change mode from '' to '0644'
+I, [2016-12-14T23:25:42.903609 #13578]  INFO -- default-ubuntu-1604:     * execute[apt-key add /tmp/kitchen/cache/https___repos_influxdata_com_influxdb_key] action run
+I, [2016-12-14T23:25:42.904540 #13578]  INFO -- default-ubuntu-1604:       - execute apt-key add /tmp/kitchen/cache/https___repos_influxdata_com_influxdb_key
+I, [2016-12-14T23:25:43.286179 #13578]  INFO -- default-ubuntu-1604:     * execute[apt-cache gencaches] action run
+I, [2016-12-14T23:25:43.287017 #13578]  INFO -- default-ubuntu-1604:       - execute apt-cache gencaches
+I, [2016-12-14T23:25:43.288235 #13578]  INFO -- default-ubuntu-1604:     * execute[apt-cache gencaches] action nothing (skipped due to action :nothing)
+I, [2016-12-14T23:25:43.289671 #13578]  INFO -- default-ubuntu-1604:     * apt_update[influxdata] action nothing (skipped due to action :nothing)
+I, [2016-12-14T23:25:43.292627 #13578]  INFO -- default-ubuntu-1604:     * file[/etc/apt/sources.list.d/influxdata.list] action create
+I, [2016-12-14T23:25:43.294425 #13578]  INFO -- default-ubuntu-1604:       - create new file /etc/apt/sources.list.d/influxdata.list
+I, [2016-12-14T23:25:43.294983 #13578]  INFO -- default-ubuntu-1604:       - update content in file /etc/apt/sources.list.d/influxdata.list from none to 7827a0
+I, [2016-12-14T23:25:43.296118 #13578]  INFO -- default-ubuntu-1604:       --- /etc/apt/sources.list.d/influxdata.list	2016-12-15 04:25:41.657283760 +0000
+I, [2016-12-14T23:25:43.297018 #13578]  INFO -- default-ubuntu-1604:       +++ /etc/apt/sources.list.d/.chef-influxdata20161215-1616-3vi1hw.list	2016-12-15 04:25:41.657283760 +0000
+I, [2016-12-14T23:25:43.297773 #13578]  INFO -- default-ubuntu-1604:       @@ -1 +1,2 @@
+I, [2016-12-14T23:25:43.299976 #13578]  INFO -- default-ubuntu-1604:       +deb      "https://repos.influxdata.com/ubuntu" trusty stable
+I, [2016-12-14T23:25:43.300859 #13578]  INFO -- default-ubuntu-1604:       - change mode from '' to '0644'
+I, [2016-12-14T23:25:43.302101 #13578]  INFO -- default-ubuntu-1604:       - change owner from '' to 'root'
+I, [2016-12-14T23:25:43.303984 #13578]  INFO -- default-ubuntu-1604:       - change group from '' to 'root'
+I, [2016-12-14T23:25:45.002446 #13578]  INFO -- default-ubuntu-1604:     * execute[apt-cache gencaches] action run
+I, [2016-12-14T23:25:45.003124 #13578]  INFO -- default-ubuntu-1604:       - execute apt-cache gencaches
+I, [2016-12-14T23:25:45.005688 #13578]  INFO -- default-ubuntu-1604:     * apt_update[influxdata] action update
+I, [2016-12-14T23:25:45.006279 #13578]  INFO -- default-ubuntu-1604:       - force update new lists of packages
+I, [2016-12-14T23:25:45.008496 #13578]  INFO -- default-ubuntu-1604:       * directory[/var/lib/apt/periodic] action create (up to date)
+I, [2016-12-14T23:25:45.010696 #13578]  INFO -- default-ubuntu-1604:       * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2016-12-14T23:25:45.012972 #13578]  INFO -- default-ubuntu-1604:       * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (up to date)
+I, [2016-12-14T23:25:51.093331 #13578]  INFO -- default-ubuntu-1604:       * execute[apt-get -q update] action run
+I, [2016-12-14T23:25:51.095041 #13578]  INFO -- default-ubuntu-1604:  - execute apt-get -q update
+I, [2016-12-14T23:25:51.095452 #13578]  INFO -- default-ubuntu-1604:     
+I, [2016-12-14T23:25:51.095848 #13578]  INFO -- default-ubuntu-1604:   
+I, [2016-12-14T23:25:57.214699 #13578]  INFO -- default-ubuntu-1604:   * apt_package[telegraf] action install
+I, [2016-12-14T23:25:57.215429 #13578]  INFO -- default-ubuntu-1604:     - install version 1.1.1-1 of package telegraf
+I, [2016-12-14T23:25:57.301569 #13578]  INFO -- default-ubuntu-1604:   * service[telegraf] action start (up to date)
+I, [2016-12-14T23:25:57.387239 #13578]  INFO -- default-ubuntu-1604:   * service[telegraf] action enable (up to date)
+I, [2016-12-14T23:25:57.433768 #13578]  INFO -- default-ubuntu-1604: 
+I, [2016-12-14T23:25:57.434714 #13578]  INFO -- default-ubuntu-1604: Running handlers:
+I, [2016-12-14T23:25:57.448620 #13578]  INFO -- default-ubuntu-1604: Running handlers complete
+I, [2016-12-14T23:25:57.449007 #13578]  INFO -- default-ubuntu-1604: Chef Client finished, 9/16 resources updated in 17 seconds
+I, [2016-12-14T23:25:57.503578 #13578]  INFO -- default-ubuntu-1604: Finished converging <default-ubuntu-1604> (0m32.11s).
+I, [2016-12-14T23:25:57.503900 #13578]  INFO -- default-ubuntu-1604: -----> Setting up <default-ubuntu-1604>...
+I, [2016-12-14T23:25:57.505048 #13578]  INFO -- default-ubuntu-1604: Finished setting up <default-ubuntu-1604> (0m0.00s).
+I, [2016-12-14T23:25:57.505158 #13578]  INFO -- default-ubuntu-1604: -----> Verifying <default-ubuntu-1604>...
+I, [2016-12-14T23:25:57.662973 #13578]  INFO -- default-ubuntu-1604: Loaded  
+I, [2016-12-14T23:25:57.793175 #13578]  INFO -- default-ubuntu-1604: Finished verifying <default-ubuntu-1604> (0m0.29s).
+I, [2016-12-14T23:25:57.793630 #13578]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
+I, [2016-12-14T23:26:00.777283 #13578]  INFO -- default-ubuntu-1604: ==> default: Forcing shutdown of VM...
+I, [2016-12-14T23:26:02.467132 #13578]  INFO -- default-ubuntu-1604: ==> default: Destroying VM and associated drives...
+I, [2016-12-14T23:26:02.738898 #13578]  INFO -- default-ubuntu-1604: Vagrant instance <default-ubuntu-1604> destroyed.
+I, [2016-12-14T23:26:02.739752 #13578]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m4.94s).
+I, [2016-12-14T23:26:02.740794 #13578]  INFO -- default-ubuntu-1604: Finished testing <default-ubuntu-1604> (1m13.22s).

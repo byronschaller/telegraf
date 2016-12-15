@@ -1,0 +1,3 @@
+/.kitchen/
+/rubocop*
+/Berksfile.lock
